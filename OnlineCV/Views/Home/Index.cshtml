@@ -1,0 +1,158 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+    /* General body styling */
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Container styling for central alignment and aesthetics */
+    .container {
+        max-width: 900px;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Heading styling */
+    h1, h2, h4 {
+        color: #333;
+    }
+
+    /* Muted text for subtle contrast */
+    .text-muted {
+        color: #6c757d !important;
+    }
+
+    /* Styling for contact links */
+    .contact-info a {
+        text-decoration: none;
+        color: #007bff;
+    }
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    /* Sections with spacing */
+    section {
+        margin-bottom: 30px;
+    }
+
+    /* Styling for links */
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Styling for experience, education, technical skills, and project cards */
+    .experience-item, .education-item, .project-item, .skills-item {
+        background: #f0f4f8;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="container mt-4">
+    <div class="text-center">
+        <!-- Name and title -->
+        <h1>Jordan Mosselson</h1>
+        <h4 class="text-muted">Aspiring Software Developer | Tech Enthusiast | Innovator</h4>
+        <hr />
+        <div class="contact-info mb-3">
+            <p>
+                <strong>Email:</strong> jordanmosselson@gmail.com<br />
+                <strong>Phone:</strong> +27 (082) 821 4642<br />
+                <strong>Location:</strong> Johannesburg, South Africa<br />
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jmosselson/" target="_blank">linkedin.com/in/jmosselson</a><br />
+            </p>
+        </div>
+    </div>
+
+    <!-- Professional summary section -->
+    <section id="summary">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate and results-driven software developer with experience in designing,
+            developing, and optimizing digital creations. Adept at creating scalable solutions using
+            cutting-edge technologies, I thrive in collaborative environments where innovation and efficiency are key.
+        </p>
+        <hr />
+    </section>
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Work experience section -->
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <h4>Escape Room Controller at #Escape</h4>                   
+                    <ul>
+                        <p>Designed and managed immersive escape room experiences, 
+                            overseeing game flow, puzzle design, and customer engagement. 
+                            Enhanced team collaboration and problem-solving skills in a dynamic, interactive environment.
+                            <small>2023 - 2024</small>
+                        </p>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <!-- Education and certifications section -->
+            <section id="education">
+                <h2>Education & Certifications</h2>
+                <div class="education-item">
+                    <h4>Matric Bachelor Pass</h4>
+                    <p><small>King David Linksfield Highschool</small></p>
+                    <p><small>2018 - 2022</small></p>
+                    <h4>Bachelor of Information Systems In Application Development</h4>
+                    <p><small>IIE Varisity College</small></p>
+                    <p><small>2023 - present</small></p>
+                </div>
+                <div class="education-item">
+                    <h4>No Certificates</h4>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <!-- Technical skills section -->
+            <section id="technical-skills">
+                <h2>Technical Skills</h2>
+                <div class="skills-item">
+                <ul>
+                    <li>C# / ASP.NET / .NET Core</li>
+                    <li>Entity Framework, SQL, Azure Services</li>
+                    <li>CSS, OOP, Java,</li>
+                    <li>Git, GitHub</li>
+                </ul>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <!-- Projects and portfolio section -->
+            <section id="projects">
+                <h2>Projects & Portfolio</h2>
+                <div class="project-item">
+                    <h4>Recipe Creator</h4>
+                    <p><small>An application that allows users to create and share recipes.</small></p>
+                    <h4>Product Sales Website</h4>
+                    <p><small> A website that allows users to browse, purchase, delete and create products.</small></p>
+                        <br />
+                        <strong>GitHub:</strong> <a href="https://github.com/JMosselson" target="_blank">github.com/JMosselson</a> 
+                        <br />
+                        <strong>GitHub:</strong> <a href="https://github.com/JMuniversity" target="_blank">github.com/JMuniversity</a>                   
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

@@ -233,27 +233,22 @@
             .github-link:hover {
                 transform: scale(1.05);
                 color: var(--c-text-white);
+            }        
+        
+        @@media (min-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
             }
 
-        {
-            grid-template-columns: 1fr 1fr;
+            .project-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
-
-        .project-grid {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        }
-
-        {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        }
+        
     </style>
 </head>
 <body>
-    <div class="container scroll-anim" data-anim="animate__fadeInUp">
+    <div class="container">
 
         <header class="header">
             <h1 class="scroll-anim" data-anim="animate__zoomIn" data-delay="100">Jordan Mosselson</h1>

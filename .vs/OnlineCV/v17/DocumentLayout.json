@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mosse\\OneDrive\\Documents\\Visual Studio Web Applications\\OnlineCV\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2D51F71B-B16B-47EB-97F4-BEE47FBD6403}|OnlineCV\\OnlineCV.csproj|c:\\users\\mosse\\onedrive\\documents\\visual studio web applications\\onlinecv\\onlinecv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D51F71B-B16B-47EB-97F4-BEE47FBD6403}|OnlineCV\\OnlineCV.csproj|solutionrelative:onlinecv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mosse\\OneDrive\\Documents\\Visual Studio Web Applications\\OnlineCV\\OnlineCV\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "OnlineCV\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mosse\\OneDrive\\Documents\\Visual Studio Web Applications\\OnlineCV\\OnlineCV\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "OnlineCV\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAPoAAAAAAAAAAAAgwAgBAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T12:07:45.646Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

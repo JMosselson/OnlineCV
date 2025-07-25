@@ -1,0 +1,64 @@
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\bin\Debug\net8.0\appsettings.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.staticwebassets.runtime.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.exe
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.deps.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.runtimeconfig.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.dll
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.pdb
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.AssemblyInfoInputs.cache
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.AssemblyInfo.cs
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.csproj.CoreCompileInputs.cache
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.RazorAssemblyInfo.cache
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.RazorAssemblyInfo.cs
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets\msbuild.OnlineCV.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineCV.props
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineCV.props
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineCV.props
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\scopedcss\bundle\OnlineCV.styles.css
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\scopedcss\projectbundle\OnlineCV.bundle.scp.css
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.dll
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\refint\OnlineCV.dll
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.pdb
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.genruntimeconfig.cache
+C:\Users\mosse\OneDrive\Documents\Visual Studio Projects\OnlineCV\OnlineCV\obj\Debug\net8.0\ref\OnlineCV.dll
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\bin\Debug\net8.0\appsettings.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.staticwebassets.runtime.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.staticwebassets.endpoints.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.exe
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.deps.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.runtimeconfig.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.dll
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\bin\Debug\net8.0\OnlineCV.pdb
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.AssemblyInfoInputs.cache
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.AssemblyInfo.cs
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.csproj.CoreCompileInputs.cache
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.RazorAssemblyInfo.cache
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.RazorAssemblyInfo.cs
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\scopedcss\bundle\OnlineCV.styles.css
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\scopedcss\projectbundle\OnlineCV.bundle.scp.css
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.dll
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\refint\OnlineCV.dll
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.pdb
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.genruntimeconfig.cache
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\ref\OnlineCV.dll
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\OnlineCV.sourcelink.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\mosse\OneDrive\Documents\Visual Studio Web Applications\OnlineCV\OnlineCV\obj\Debug\net8.0\staticwebassets.build.json.cache

@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Mosselson - Online CV (Custom CSS)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* --- Base & Variables --- */
+        :root {
+            --c-primary: #4F46E5;
+            --c-secondary: #6366F1;
+            --c-accent: #3B82F6;
+            --c-dark-bg: #111827;
+            --c-dark-card: #1F2937;
+            --c-text-light: #D1D5DB;
+            --c-text-medium: #9CA3AF;
+            --c-text-white: #FFFFFF;
+        }
+
+        /* --- Global Styles --- */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--c-dark-bg) 0%, var(--c-dark-card) 100%);
+            color: var(--c-text-light);
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        a {
+            color: var(--c-text-medium);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            a:hover {
+                color: var(--c-accent);
+            }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: var(--c-dark-card);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Class to hide elements before animation */
+        .scroll-anim {
+            opacity: 0;
+        }
+
+        /* --- Header --- */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+            .header h1 {
+                font-size: 2.75rem;
+                font-weight: 700;
+                color: var(--c-text-white);
+                margin: 0 0 0.5rem;
+            }
+
+            .header h3 {
+                font-size: 1.25rem;
+                font-weight: 500;
+                color: var(--c-secondary);
+                margin: 0 0 1.5rem;
+            }
+
+            .header hr {
+                width: 80px;
+                height: 4px;
+                margin: 0 auto 2rem;
+                background: linear-gradient(to right, var(--c-secondary), var(--c-accent));
+                border: none;
+                border-radius: 2px;
+            }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+            .contact-grid i {
+                margin-right: 0.75rem;
+                color: var(--c-secondary);
+            }
+
+        /* --- Sections --- */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--c-text-white);
+            position: relative;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+            .section-title::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 50px;
+                height: 4px;
+                background-color: var(--c-accent);
+                border-radius: 2px;
+            }
+
+            .section-title i {
+                margin-right: 1rem;
+                color: var(--c-secondary);
+            }
+
+        /* --- Specific Section Styles --- */
+        .experience-item, .education-item {
+            margin-bottom: 1rem;
+        }
+
+        .item-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--c-text-white);
+        }
+
+        .item-subtitle {
+            color: var(--c-text-medium);
+            margin-bottom: 0.25rem;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem 1.5rem;
+        }
+
+            .skills-list li {
+                position: relative;
+                padding-left: 1.5rem;
+            }
+
+                .skills-list li::before {
+                    content: '\f00c';
+                    font-family: 'Font Awesome 6 Free';
+                    font-weight: 900;
+                    position: absolute;
+                    left: 0;
+                    color: var(--c-secondary);
+                }
+
+        /* --- Projects --- */
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--c-dark-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            }
+
+            .project-card h4 {
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: var(--c-text-white);
+                margin-bottom: 0.5rem;
+            }
+
+            .project-card p {
+                color: var(--c-text-medium);
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+            }
+
+        .project-btn {
+            display: inline-block;
+            background-color: var(--c-secondary);
+            color: var(--c-text-white);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            transition: background-color 0.3s ease;
+        }
+
+            .project-btn:hover {
+                background-color: var(--c-primary);
+                color: var(--c-text-white);
+            }
+
+        .github-link-wrapper {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        .github-link {
+            display: inline-block;
+            background: linear-gradient(to right, var(--c-secondary), var(--c-accent));
+            color: var(--c-text-white);
+            font-weight: 700;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+            .github-link:hover {
+                transform: scale(1.05);
+                color: var(--c-text-white);
+            }
+
+        {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .project-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        }
+
+        {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container scroll-anim" data-anim="animate__fadeInUp">
+
+        <header class="header">
+            <h1 class="scroll-anim" data-anim="animate__zoomIn" data-delay="100">Jordan Mosselson</h1>
+            <h3 class="scroll-anim" data-anim="animate__fadeIn" data-delay="300">Aspiring Software Developer | Tech Enthusiast | Innovator</h3>
+            <hr class="scroll-anim" data-anim="animate__fadeIn" data-delay="500">
+
+            <div class="contact-grid scroll-anim" data-anim="animate__fadeIn" data-delay="700">
+                <a href="mailto:jordanmosselson@gmail.com"><i class="fas fa-envelope"></i>jordanmosselson@gmail.com</a>
+                <a href="tel:+27828214642"><i class="fas fa-phone"></i>+27 82 821 4642</a>
+                <p><i class="fas fa-map-marker-alt"></i>Johannesburg, South Africa</p>
+                <a href="https://www.linkedin.com/in/jmosselson/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>linkedin.com/in/jmosselson</a>
+                <a href="https://github.com/JMosselson" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>github.com/JMosselson</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="section scroll-anim" data-anim="animate__fadeInUp" data-delay="200">
+                <h2 class="section-title"><i class="fas fa-user-tie"></i>About Me</h2>
+                <p>I am a passionate software developer who thrives on solving real-world problems through technology. I bring creativity and precision to every solution and am constantly exploring new technologies that drive innovation. My goal is to craft efficient, scalable, and user-centric digital experiences.</p>
+            </section>
+
+            <section class="section scroll-anim" data-anim="animate__fadeInUp" data-delay="200">
+                <h2 class="section-title"><i class="fas fa-briefcase"></i>Work Experience</h2>
+                <div class="experience-item">
+                    <h4 class="item-title">Escape Room Controller</h4>
+                    <p class="item-subtitle">#Escape | 2023 - 2024</p>
+                    <p>Designed and managed immersive puzzle experiences, ensuring excellent customer satisfaction and team collaboration. Responsible for game flow, puzzle design, and enhancing visitor engagement.</p>
+                </div>
+            </section>
+
+            <section class="section scroll-anim" data-anim="animate__fadeInUp" data-delay="200">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i>Education</h2>
+                <div class="education-item">
+                    <h4 class="item-title">Bachelor of Information Systems in Application Development</h4>
+                    <p class="item-subtitle">IIE Varsity College | 2023 - Present</p>
+                </div>
+                <div class="education-item">
+                    <h4 class="item-title">Matric Bachelor Pass</h4>
+                    <p class="item-subtitle">King David Linksfield High School | 2018 - 2022</p>
+                </div>
+            </section>
+
+            <section class="section scroll-anim" data-anim="animate__fadeInUp" data-delay="200">
+                <h2 class="section-title"><i class="fas fa-code"></i>Technical Skills</h2>
+                <ul class="skills-list">
+                    <li>C#, .NET Core, ASP.NET</li>
+                    <li>Entity Framework & SQL</li>
+                    <li>Azure</li>
+                    <li>OOP & Java</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React & Tailwind CSS</li>
+                    <li>Git & GitHub</li>
+                    <li>Agile Development</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </section>
+
+            <section class="section scroll-anim" data-anim="animate__fadeInUp" data-delay="200">
+                <h2 class="section-title"><i class="fas fa-laptop-code"></i>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h4>NotBroke (Budgeting App)</h4>
+                        <p>A personal budgeting app to help users manage expenses, track income, and visualize their financial health.</p>
+                        <a href="https://github.com/JMosselson/NotBroke.git" target="_blank" rel="noopener noreferrer" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <h4>AccuWeather Forecast App</h4>
+                        <p>An Android app using the AccuWeather API to display detailed 5-day weather forecasts for any city.</p>
+                        <a href="https://github.com/JMosselson/AccuWeather5DayForecast.git" target="_blank" rel="noopener noreferrer" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <h4>Claims Management System</h4>
+                        <p>A web app for managing academic staff claims, featuring robust approval workflows and data management.</p>
+                        <a href="https://github.com/JMosselson/ClaimsManagementSystem.git" target="_blank" rel="noopener noreferrer" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <hh4>Recipe Creator App</h4>
+                        <p>A GUI based app that allows users to create and manage their own recipes.</p>
+                            <a href="https://github.com/JMosselson/SimpleRecipeApp.git" target="_blank" rel="noopener noreferrer" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="github-link-wrapper">
+                    <a href="https://github.com/JMosselson" target="_blank" rel="noopener noreferrer" class="github-link">
+                        Explore More on GitHub <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const animation = entry.target.getAttribute('data-anim');
+                        const delay = entry.target.getAttribute('data-delay');
+
+                        if (delay) {
+                            entry.target.style.animationDelay = `${delay}ms`;
+                        }
+
+                        entry.target.classList.add('animate__animated', animation);
+                        entry.target.style.opacity = 1;
+
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.scroll-anim').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan Mosselson - Online CV (Custom CSS)</title>
+    <title>Jordan Mosselson - Online CV</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <style>
         /* --- Base & Variables --- */
         :root {
@@ -20,7 +20,6 @@
             --c-text-white: #FFFFFF;
         }
 
-        /* --- Global Styles --- */
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, var(--c-dark-bg) 0%, var(--c-dark-card) 100%);
@@ -30,7 +29,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            min-height: 100vh;
+            min-height: 100vh; /* Ensure enough height for scrolling to trigger animations */
         }
 
         a {
@@ -53,9 +52,9 @@
             border: 1px solid rgba(255,255,255,0.05);
         }
 
-        /* Class to hide elements before animation */
+        /* Initial state for scroll animations - hidden */
         .scroll-anim {
-            opacity: 0;
+            visibility: hidden; /* Changed from opacity: 0; */
         }
 
         /* --- Header --- */
@@ -91,6 +90,7 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 1rem;
+            align-items: center;
         }
 
             .contact-grid i {
@@ -98,10 +98,53 @@
                 color: var(--c-secondary);
             }
 
+            .contact-grid a, .contact-grid p {
+                margin: 0;
+            }
+
+        /* --- Button used in multiple places --- */
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            margin-top: 1rem;
+            background: linear-gradient(to right, var(--c-secondary), var(--c-accent));
+            color: var(--c-text-white) !important;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+            .contact-btn:hover {
+                transform: scale(1.05);
+                color: var(--c-text-white) !important;
+            }
+
         /* --- Sections --- */
         .section {
             margin-bottom: 3rem;
         }
+
+            .section.contact-cta {
+                text-align: center;
+                background-color: var(--c-dark-bg);
+                padding: 2rem;
+                border-radius: 12px;
+                margin-top: 3rem;
+            }
+
+                .section.contact-cta h2 {
+                    margin-top: 0;
+                }
+
+                .section.contact-cta p {
+                    color: var(--c-text-medium);
+                    max-width: 500px;
+                    margin: 0 auto 1rem;
+                }
 
         .section-title {
             font-size: 1.875rem;
@@ -115,7 +158,7 @@
             .section-title::after {
                 content: '';
                 position: absolute;
-                left: 0;
+                left: 0; /* Default left alignment */
                 bottom: 0;
                 width: 50px;
                 height: 4px;
@@ -128,7 +171,16 @@
                 color: var(--c-secondary);
             }
 
-        /* --- Specific Section Styles --- */
+        /* Specific style for centered section title in Contact CTA */
+        .section-title-centered {
+            text-align: center;
+        }
+
+            .section-title-centered::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
         .experience-item, .education-item {
             margin-bottom: 1rem;
         }
@@ -158,7 +210,7 @@
             }
 
                 .skills-list li::before {
-                    content: '\f00c';
+                    content: '\f00c'; /* Font Awesome checkmark icon */
                     font-family: 'Font Awesome 6 Free';
                     font-weight: 900;
                     position: absolute;
@@ -168,8 +220,9 @@
 
         /* --- Projects --- */
         .project-grid {
-            display: grid;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 1.5rem;
         }
 
@@ -179,6 +232,7 @@
             border-radius: 8px;
             border: 1px solid rgba(255,255,255,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%; /* Default for mobile */
         }
 
             .project-card:hover {
@@ -223,7 +277,7 @@
         .github-link {
             display: inline-block;
             background: linear-gradient(to right, var(--c-secondary), var(--c-accent));
-            color: var(--c-text-white);
+            color: var(--c-text-white) !important;
             font-weight: 700;
             padding: 0.75rem 2rem;
             border-radius: 8px;
@@ -232,19 +286,121 @@
 
             .github-link:hover {
                 transform: scale(1.05);
-                color: var(--c-text-white);
-            }        
-        
-        @@media (min-width: 768px) {
-            .contact-grid {
-                grid-template-columns: 1fr 1fr;
+                color: var(--c-text-white) !important;
             }
 
-            .project-grid {
-                grid-template-columns: 1fr 1fr;
+        /* --- Modals (Contact and Message Box) --- */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease-in-out; /* Animation for modal appearance */
+        }
+
+        .modal-content {
+            background: var(--c-dark-card);
+            padding: 2.5rem;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 500px;
+            color: var(--c-text-light);
+            position: relative;
+            animation: slideIn 0.3s ease-in-out; /* Animation for modal content */
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 2rem;
+            color: var(--c-text-medium);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+            .close-btn:hover {
+                color: var(--c-text-white);
+            }
+
+        #contact-form input, #contact-form textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+            padding: 0.85rem;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            background: var(--c-dark-bg);
+            color: var(--c-text-white);
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: border-color 0.3s ease;
+        }
+
+            #contact-form input:focus, #contact-form textarea:focus {
+                outline: none;
+                border-color: var(--c-accent);
+            }
+
+        #contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .send-btn {
+            width: 100%;
+            background: linear-gradient(to right, var(--c-secondary), var(--c-accent));
+            color: var(--c-text-white);
+            font-weight: bold;
+            padding: 0.85rem 2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            font-size: 1rem;
+        }
+
+            .send-btn:hover {
+                transform: scale(1.02);
+            }
+
+        /* Keyframe animations for modals */
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
             }
         }
-        
+
+        @@keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @@media (min-width: 768px) {
+            .project-card {
+                flex-basis: calc(50% - 1.5rem);
+            }
+        }
     </style>
 </head>
 <body>
@@ -260,7 +416,6 @@
                 <a href="tel:+27828214642"><i class="fas fa-phone"></i>+27 82 821 4642</a>
                 <p><i class="fas fa-map-marker-alt"></i>Johannesburg, South Africa</p>
                 <a href="https://www.linkedin.com/in/jmosselson/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>linkedin.com/in/jmosselson</a>
-                <a href="https://github.com/JMosselson" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>github.com/JMosselson</a>
             </div>
         </header>
 
@@ -327,7 +482,12 @@
                     <div class="project-card">
                         <h4>Recipe Creator App</h4>
                         <p>A GUI based app that allows users to create and manage their own recipes.</p>
-                            <a href="https://github.com/JMosselson/SimpleRecipeApp.git" target="_blank" rel="noopener noreferrer" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/JMosselson/SimpleRecipeApp.git" target="_blank" rel="noopener noreferrer" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <h4>AgriEnergyConnect</h4>
+                        <p>AgriEnergy Connect bridges the gap between the agricultural sector and renewable energy solutions.</p>
+                        <a href="https://github.com/JMosselson/AgriEnergyConnect.git" target="_blank" class="project-btn">View Project <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="github-link-wrapper">
@@ -336,34 +496,100 @@
                     </a>
                 </div>
             </section>
-        </main>
 
+            <section class="section contact-cta scroll-anim" data-anim="animate__fadeInUp" data-delay="200">
+                <h2 class="section-title section-title-centered">Let's Connect</h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious team. Feel free to send me a message.</p>
+                <a href="#" class="contact-btn" onclick="openContactModal(); return false;">
+                    <i class="fas fa-paper-plane"></i>Send a Message
+                </a>
+            </section>
+        </main>
     </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeContactModal()">&times;</span>
+            <h2 style="text-align: center; margin-bottom: 1.5rem;">Send Me a Message</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom Message Box Modal -->
+    <div id="messageBox" class="modal">
+        <div class="modal-content">
+            <p id="messageText" style="text-align: center; margin-bottom: 1.5rem; font-size: 1.1rem;"></p>
+            <button class="send-btn" onclick="closeMessageBox()">OK</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@@emailjs/browser@4/dist/email.min.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // --- Modal & Form Logic ---
+            const contactModal = document.getElementById('contactModal');
+            const messageBox = document.getElementById('messageBox');
+            const messageText = document.getElementById('messageText');
+            const contactForm = document.getElementById('contact-form');
+
+            // Expose modal functions globally for your inline 'onclick' attributes
+            window.openContactModal = () => contactModal.style.display = 'flex';
+            window.closeContactModal = () => contactModal.style.display = 'none';
+            window.showMessageBox = (message) => {
+                messageText.innerText = message;
+                messageBox.style.display = 'flex';
+            };
+            window.closeMessageBox = () => messageBox.style.display = 'none';
+
+            // Close modals when clicking outside of them
+            window.addEventListener('click', e => {
+                if (e.target === contactModal) window.closeContactModal();
+                if (e.target === messageBox) window.closeMessageBox();
+            });
+
+            // --- Scroll Animation Logic ---
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const animation = entry.target.getAttribute('data-anim');
                         const delay = entry.target.getAttribute('data-delay');
-
-                        if (delay) {
-                            entry.target.style.animationDelay = `${delay}ms`;
-                        }
-
+                        if (delay) entry.target.style.animationDelay = `${delay}ms`;
+                        entry.target.style.visibility = 'visible';
                         entry.target.classList.add('animate__animated', animation);
-                        entry.target.style.opacity = 1;
-
                         observer.unobserve(entry.target);
                     }
                 });
             }, { threshold: 0.1 });
 
-            document.querySelectorAll('.scroll-anim').forEach(el => {
-                observer.observe(el);
+            document.querySelectorAll('.scroll-anim').forEach(el => observer.observe(el));
+
+            emailjs.init({
+                publicKey: 'YOUR_EMAILJS_PUBLIC_KEY' // Your EmailJS Public Key
+            });
+
+            contactForm.addEventListener('submit', e => {
+                e.preventDefault();
+                                //Email ServiceID,              TemplateID
+                emailjs.sendForm('YOUR_EMAILJS_SERVICE_ID', 'YOUR_EMAILJS_TEMPLATE_ID', contactForm)
+                    .then(() => {
+                        window.showMessageBox('✅ Message sent successfully!');
+                        window.closeContactModal();
+                        contactForm.reset();
+                    })
+                    .catch(err => {
+                        console.error('EmailJS Error:', err);
+                        window.showMessageBox('❌ Failed to send message. Please try again later.');
+                    });
             });
         });
     </script>
+
 </body>
 </html>
